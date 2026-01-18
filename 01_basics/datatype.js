@@ -3,7 +3,7 @@
 //alert(3 + 3 ) // we are using nodejs,not web browser 
 
 
-//  => DATATYPE      using [(typeof DATA)    to know the type of data]
+//  => DATATYPE      using [(typeof DATA) or type(DATA)   to know the type of data]
 
 //  => Primitive datatye
 
