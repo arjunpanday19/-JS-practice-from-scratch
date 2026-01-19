@@ -59,10 +59,27 @@ console.log(typeof myFunction);  //function
 
 
 
+//+++++++++type of memory
 
+//stack (Primitive type uses it)  -> gives copy of variable
 
+//heap (Non- primitive type uses it)  -> gives reference of variable
 
+let myYoutubeName = "hiteshdotcom";
+let anotherName = myYoutubeName;     //value in stack
 
+anotherName ="chaiaurcode";
 
+console.log(myYoutubeName);    //hiteshdotcom
+console.log(anotherName);      //chaiaurcode
 
+let userOne ={                     //nonpremitive
+    email:"user@google.com",
+    upi:"user@ybl",
+}
 
+let userTwo = userOne;        // reference in heap
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email);  //hitesh@google.com
+console.log(userTwo.email);  //hitesh@google.com
