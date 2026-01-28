@@ -46,9 +46,14 @@ fruits.forEach((fruit) => {
     // console.log(fruit);
 });
 
-// Mapping and Filtering
+// Mapping and Filtering and reduce
 const upperFruits = fruits.map((fruit) => fruit.toUpperCase()); // creates a new array with uppercase fruits
 const longNamedFruits = fruits.filter((fruit) => fruit.length > 5); // creates a new array with fruits having names longer than 5 characters
+let array = [1, 2, 3];
+const output = array.reduce((res,curr)=>{ // reduce to accumulate values to a single value 
+    return res + curr;
+});
+console.log(output); // 6
 
 // push and  concat to add elements , spread operator to merge arrays, flat to flatten nested arrays
 
@@ -83,5 +88,18 @@ let score2= 44;
 let score3= 55; 
 console.log(Array.of(score1, score2, score3)); // [33, 44, 55] // creates an array from the given values
 
+
+
+//+++++ destructuring arrays ++++++
+
+//>> old way
+// const firstFruit = fruits[0];
+// const secondFruit = fruits[1];
+
+//>> new way
+const [firstFruit, secondFruit, ...restFruits] = fruits;
+// console.log(firstFruit); // mango
+// console.log(secondFruit); // apple
+// console.log(restFruits); // [ 'kiwi', 'banana', [ 'carrot', 'broccoli' ] ]
 
 // Note: There are many more array methods and functionalities in JavaScript. This is just a basic overview.
