@@ -2,10 +2,10 @@ const body = document.querySelector("body");
 const buttons = document.querySelectorAll(".button");
 
 
-buttons.forEach(function (button){
-button.addEventListener("click",function (e){
+buttons.forEach(function (button){   // for each button we are adding event listener
+button.addEventListener("click",function (e){   // here click is the event and e is the event object which is passed to the function when the event occurs
     // console.log(e);
-    // console.log(e.target);
+    // console.log(e.target.id);  // here we are getting the id of the button which is clicked
     
     if(e.target.id == "black"){
         body.style.backgroundColor = e.target.id;
