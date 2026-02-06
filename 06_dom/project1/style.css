@@ -1,0 +1,41 @@
+ body {
+    margin: 20px;
+  }
+  .discription{
+    width: 100%;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    margin: 10px auto;
+  }
+
+.button {
+    height:100px;
+    width:100px;
+    border: 2px solid black;
+    margin : 5px;
+    padding : 5px;
+    display:inline-block;
+    text-align : center;
+  }
+
+  span{
+    display: block;
+  }
+
+  #black{
+    background : black;
+    color : white;
+  }
+  #brown{
+    background : brown;
+    color : white;
+  }
+  #yellow{
+    background : yellow;
+    color : black;
+  }
+  #blue{
+    background : blue;
+    color : white;
+  }
